@@ -1,4 +1,4 @@
-import SentimentFactory
+from SentimentFactory import SentimentFactory
 from sample_string import sample_string
 
 

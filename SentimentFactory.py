@@ -8,7 +8,7 @@ class SentimentFactory(object):
     def factory(method=''):
         if method == 'TextBlob':
             print "Using TextBlob for sentiment analysis..."
-            return usingTextBlob.TextBlob()
+            return usingTextBlob.TextBlobApproach()
         elif method == 'NLTKSentiment':
             print "Using NLTKSentiment for sentiment analysis..."
             return usingNLTKSentiment.NLTKSentiment()
