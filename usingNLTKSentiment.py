@@ -12,11 +12,10 @@ class NLTKSentiment(object):
         # Get list of sentences
         sentences = nltk.sent_tokenize(text)
 
-        # Create average score for all sentences
+        # Return list of scores
+        sent_score = []
         for sentence in sentences:
-            print(sentence)
-            ss = self.sid.polarity_scores(sentence)
-            for k in sorted(ss):
-                print('{0}: {1}, '.format(k, ss[k]))
-                print()
+            sent_score.append(self.sid.polarity_scores(sentence)['compound'])
+
+        return sent_score
 

@@ -10,11 +10,9 @@ class TextBlobApproach(object):
         # Get list of sentences
         sentences = nltk.sent_tokenize(text)
 
-        # Create average score for all sentences
-        count = 1
+        # Return list of scores
+        sent_score = []
         for sentence in sentences:
-            print(sentence)
-            ss = TextBlob(sentence).sentiment.polarity
-            print('{0}: {1}, '.format(count, ss))
-            print()
-            count += 1
+            sent_score.append(TextBlob(sentence).sentiment.polarity)
+
+        return sent_score
