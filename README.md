@@ -13,12 +13,12 @@ Simply by running `main.py`, one can run all the implemented sentiment analysis 
 A sample output is as follows
 
 \# ['TextBlob', 'NLTKSentiment']  
-0: [0.22727272727272727, 0.5574], This is a positive statement.  
-1: [0.22727272727272727, 0.802], Be positive, see positive.  
-2: [0.36363636363636365, 0.7579], This will surely read as a positive statement.  
-3: [-0.65, -0.8442], But then something evil happens and negative statements need to be identified.  
-4: [-0.2333333333333333, -0.7184], Check if minus and negative things give a negative value.  
-5: [0.34015151515151515, 0.8555], We are back to good,easy, positive statements.  
+0: [0.2272, 0.5574], This is a positive statement.  
+1: [0.2272, 0.802], Be positive, see positive.  
+2: [0.3636, 0.7579], This will surely read as a positive statement.  
+3: [-0.6500, -0.8442], But then something evil happens and negative statements need to be identified.  
+4: [-0.2333, -0.7184], Check if minus and negative things give a negative value.  
+5: [0.3401, 0.8555], We are back to good,easy, positive statements.  
 
 ## How to Extend?
 
